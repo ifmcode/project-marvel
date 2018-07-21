@@ -1,5 +1,7 @@
 <template>
-  <h2>{{title}}</h2>
+  <div class="commiclist-wrapper">
+    {{ searchValue }}
+  </div>
 </template>
 
 <script src="./ComicList.js"></script>

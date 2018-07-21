@@ -1,6 +1,10 @@
 <template>
   <div class="searcher-wrapper">
-    <h2>{{title}}</h2>
+    <input @keyup.enter="sendSearchValue()" type="text" v-model="searcherInputValue">
+    <select v-model="searcherSelectValue">
+      <option value="comics">comics</option>
+      <option value="characters">characters</option>
+    </select>
   </div>
 </template>
 

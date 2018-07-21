@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import ComicList from '../components/ComicList/ComicList.vue';
+import ComicsPage from '../components/ComicsPage/ComicsPage.vue';
 
 Vue.use(Router);
 
@@ -9,12 +9,12 @@ export default new Router({
     {
       path: '/',
       name: 'index',
-      component: ComicList,
+      component: ComicsPage,
     },
     {
       path: '/comics',
-      name: 'ComicList',
-      component: ComicList,
+      name: 'ComicsPage',
+      component: ComicsPage,
     },
   ],
 });

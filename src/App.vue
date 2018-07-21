@@ -1,19 +1,14 @@
 <template>
   <div id="app">
-    <Searcher/>
     <router-view/>
   </div>
 </template>
 
 <script>
 
-import Searcher from './components/Searcher/Searcher.vue';
-
 export default {
   name: 'App',
-  components : {
-    Searcher,
-  }
+  components : {}
 };
 </script>
 
