@@ -1,0 +1,82 @@
+.singlecomicpage-wrapper{
+  position: relative;
+  display: block;
+  height: calc(100vh - 50px);
+  width: 100%;
+  overflow: hidden;
+}
+
+.singlecomicpage-wrapper .back-btn{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  fill: white;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.singlecomicpage-wrapper .back-btn:hover{
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.singlecomicpage-wrapper .left-container{
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.singlecomicpage-wrapper .right-container{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+}
+
+.singlecomicpage-wrapper .left-container{
+}
+
+.right-container{
+  background-color: #333333;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+.right-container .description{
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: gray;
+}
+
+.right-container .title{
+  font-size: 1.8rem;
+  color: white;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.singlecomicpage-wrapper .left-container .original{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  z-index: 2;
+}
+
+.singlecomicpage-wrapper .left-container .blured{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.3);
+  width: 100%;
+  z-index: 1;
+  filter: grayscale(100%) blur(5px);
+}

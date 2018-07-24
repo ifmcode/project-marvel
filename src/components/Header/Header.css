@@ -1,0 +1,15 @@
+.header-wrapper{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #EE171F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-wrapper img{
+  height: 40px;
+  width: 100px;
+}
+
